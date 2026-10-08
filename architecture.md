@@ -42,7 +42,8 @@ This document provides a comprehensive, production-grade architecture blueprint 
     - [RAG Triad Automated Evaluation (Ragas / TruLens)](#rag-triad-automated-evaluation)
     - [Semantic Cache & Benchmark Suite](#semantic-cache--benchmark-suite)
 13. [Test Suite Verification (108/108 Tests Passing)](#13-test-suite-verification)
-14. [Complete Code Blueprints](#14-complete-code-blueprints)
+14. [Vercel Cloud Deployment & Serverless Integration](#14-vercel-cloud-deployment--serverless-integration)
+15. [Complete Code Blueprints](#15-complete-code-blueprints)
 
 ---
 
@@ -394,7 +395,79 @@ The complete end-to-end codebase is continuously verified across all 9 phases:
 
 ---
 
-## 14. Complete Code Blueprints
+## 14. Vercel Cloud Deployment & Serverless Integration
+
+The system is fully architected for seamless, zero-configuration deployment to **Vercel** with high performance, edge caching, and serverless execution:
+
+### Architecture Topology on Vercel
+```
+                     ┌──────────────────────────────────────┐
+                     │         Incoming User Traffic        │
+                     └──────────────────┬───────────────────┘
+                                        │
+                         ┌──────────────┴──────────────┐
+                         ▼                             ▼
+              Static UI Requests             API Requests (/api/*)
+              ┌─────────────────────┐        ┌─────────────────────┐
+              │   Vercel Edge CDN   │        │  Vercel Serverless  │
+              │   dist/ assets      │        │  Node.js Function   │
+              │   (HTML, JS, CSS)   │        │  api/index.ts       │
+              └─────────────────────┘        └──────────┬──────────┘
+                                                        │
+                                                        ▼
+                                             ┌─────────────────────┐
+                                             │ Express App Gateway │
+                                             │ (server/app.ts)     │
+                                             │ • Hybrid RAG Engine │
+                                             │ • Cheerio Scraper   │
+                                             │ • Guardrailed Gen   │
+                                             └─────────────────────┘
+```
+
+### Key Vercel Configuration Components
+1. **`vercel.json` Orchestration:**
+   - Defines `buildCommand: "vite build"` producing the static SPA client bundle in `outputDirectory: "dist"`.
+   - Directs all `/api/(.*)` requests into the `/api` serverless handler while rewriting all non-API paths to `/index.html` for single-page application routing.
+2. **Serverless Function Adapter (`api/index.ts`):**
+   - Directly imports the initialized, lightweight Express app from `server/app.ts` and exports it as the default serverless request handler.
+   - Decoupled from `server.ts` process listening (`app.listen()`), allowing the exact same backend engine to run in local development (`tsx server.ts`), CI/CD test suites, and Vercel serverless execution.
+3. **Dual-Path Routing & CORS Defense:**
+   - Express router is mounted at both `/api` and root `/` so that both path-preserving and path-stripped Vercel rewrites execute cleanly without 404 errors.
+   - Built-in CORS headers on all `/api` routes guarantee reliable cross-origin access for preview deployments and staging domains.
+4. **Environment Variables on Vercel:**
+   - `GEMINI_API_KEY`: Configured in Vercel Project Settings > Environment Variables for server-side generation.
+   - `NODE_ENV`: Set to `production` automatically by Vercel during build and runtime.
+
+---
+
+## 15. Complete Code Blueprints
+
+### Vercel Serverless Entrypoint (`api/index.ts`)
+```typescript
+import app from '../server/app';
+
+export default app;
+```
+
+### Vercel Deployment Configuration (`vercel.json`)
+```json
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
 
 ### Concise Direct Answer Formatter (`server/ragEngine.ts`)
 ```typescript
@@ -477,4 +550,4 @@ CREATE INDEX idx_mf_chunks_metadata ON mutual_fund_chunks USING gin (metadata);
 
 ---
 
-*Document Version: 3.0.0 &bull; Architecture Status: Production Blueprint &bull; App Name: HDFC Mutual Fund Chat Bot*
+*Document Version: 3.1.0 &bull; Architecture Status: Production Blueprint &bull; App Name: HDFC Mutual Fund Chat Bot*
