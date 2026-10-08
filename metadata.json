@@ -1,0 +1,6 @@
+{
+  "name": "Mutual Fund RAG Architect & Engine",
+  "description": "Comprehensive phase-wise architecture, Phase 1 Groww data ingestion pipeline, and interactive RAG assistant for HDFC mutual funds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

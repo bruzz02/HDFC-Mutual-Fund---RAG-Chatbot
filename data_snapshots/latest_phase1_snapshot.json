@@ -1,0 +1,990 @@
+[
+  {
+    "id": "hdfc-large-cap-fund-direct-growth",
+    "search_id": "hdfc-large-cap-fund-direct-growth",
+    "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "scheme_name": "HDFC Large Cap Fund Direct Growth",
+    "category": "Equity",
+    "sub_category": "Large Cap",
+    "fund_house": "HDFC Mutual Fund",
+    "fund_manager": "Prashant Jain",
+    "launch_date": "01-Jan-201",
+    "aum": 39933.37,
+    "nav": 1161.31,
+    "nav_date": "07-Oct-2026",
+    "expense_ratio": 1.04,
+    "exit_load": "Exit load of 1% if redeemed within 1 year",
+    "lock_in": null,
+    "benchmark_name": "NIFTY 100 Total Return Index",
+    "risk": "Very High",
+    "min_investment_amount": 100,
+    "min_sip_investment": 100,
+    "crisil_rating": null,
+    "groww_rating": 4,
+    "description": "HDFC Large Cap Fund Direct Growth is Large Cap Equity mutual fund with risk-reward rating of 4/10. It has track record of 13 years, with three year return of 7.81. Risk is Very High",
+    "returns": {
+      "return1d": -0.63,
+      "return1w": -0.03,
+      "return1m": -5.15,
+      "return3m": -6.55,
+      "return6m": 1.92,
+      "return1y": -6.09,
+      "return2y": -6.17,
+      "return3y": 25.37,
+      "return5y": 56.51,
+      "return7y": 140.96,
+      "return10y": 203.36,
+      "return_since_created": 407.25,
+      "cat_return1y": -5.17,
+      "cat_return3y": 30.14,
+      "cat_return5y": 45.58
+    },
+    "holdings": [
+      {
+        "company_name": "ICICI Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 4015.2899,
+        "corpus_per": 10.05,
+        "stock_search_id": "icici-bank-ltd"
+      },
+      {
+        "company_name": "HDFC Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 2747.562,
+        "corpus_per": 6.88,
+        "stock_search_id": "hdfc-bank-ltd"
+      },
+      {
+        "company_name": "Bharti Airtel Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 2486.2502,
+        "corpus_per": 6.23,
+        "stock_search_id": "bharti-airtel-ltd"
+      },
+      {
+        "company_name": "Kotak Mahindra Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 2279.9027,
+        "corpus_per": 5.71,
+        "stock_search_id": "kotak-mahindra-bank-ltd"
+      },
+      {
+        "company_name": "Titan Company Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 2103.1083,
+        "corpus_per": 5.27,
+        "stock_search_id": "titan-company-ltd"
+      },
+      {
+        "company_name": "Reliance Industries Ltd",
+        "sector_name": "Energy & Utilities",
+        "instrument_name": "Equity",
+        "market_value": 1909.1449,
+        "corpus_per": 4.78,
+        "stock_search_id": "reliance-industries-ltd"
+      },
+      {
+        "company_name": "Torrent Pharmaceuticals Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 1611.446,
+        "corpus_per": 4.04,
+        "stock_search_id": "torrent-pharmaceuticals-ltd"
+      },
+      {
+        "company_name": "Axis Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1392.5486,
+        "corpus_per": 3.49,
+        "stock_search_id": "axis-bank-ltd"
+      },
+      {
+        "company_name": "Bajaj Finserv Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1328.217,
+        "corpus_per": 3.33,
+        "stock_search_id": "bajaj-finserv-ltd"
+      },
+      {
+        "company_name": "Bajaj Auto Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 1168.6988,
+        "corpus_per": 2.93,
+        "stock_search_id": "bajaj-auto-ltd"
+      },
+      {
+        "company_name": "Infosys Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 1101.617,
+        "corpus_per": 2.76,
+        "stock_search_id": "infosys-ltd"
+      },
+      {
+        "company_name": "Lupin Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 1010.1611,
+        "corpus_per": 2.53,
+        "stock_search_id": "lupin-ltd"
+      },
+      {
+        "company_name": "Zomato Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 992.9498,
+        "corpus_per": 2.49,
+        "stock_search_id": "zomato-ltd"
+      },
+      {
+        "company_name": "Cholamandalam Investment & Finance Company Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 973.2256,
+        "corpus_per": 2.44,
+        "stock_search_id": "cholamandalam-investment-finance-company-ltd"
+      },
+      {
+        "company_name": "Ambuja Cements Ltd",
+        "sector_name": "Materials",
+        "instrument_name": "Equity",
+        "market_value": 894.3005,
+        "corpus_per": 2.24,
+        "stock_search_id": "ambuja-cements-ltd"
+      },
+      {
+        "company_name": "Tata Motors Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 808.2433,
+        "corpus_per": 2.02,
+        "stock_search_id": "tata-motors-ltd-22"
+      },
+      {
+        "company_name": "Larsen & Toubro Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 795.3192,
+        "corpus_per": 1.99,
+        "stock_search_id": "larsen-toubro-ltd"
+      },
+      {
+        "company_name": "Interglobe Aviation Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 784.7143,
+        "corpus_per": 1.97,
+        "stock_search_id": "interglobe-aviation-ltd"
+      },
+      {
+        "company_name": "State Bank of India",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 755.5272,
+        "corpus_per": 1.89,
+        "stock_search_id": "state-bank-of-india"
+      },
+      {
+        "company_name": "NTPC Ltd",
+        "sector_name": "Energy & Utilities",
+        "instrument_name": "Equity",
+        "market_value": 730.6703,
+        "corpus_per": 1.83,
+        "stock_search_id": "ntpc-ltd"
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "percentage": 39.07
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "percentage": 13.09
+      },
+      {
+        "sector": "Technology",
+        "percentage": 12.78
+      },
+      {
+        "sector": "Healthcare",
+        "percentage": 9.95
+      },
+      {
+        "sector": "Industrials",
+        "percentage": 8.23
+      },
+      {
+        "sector": "Energy & Utilities",
+        "percentage": 6.61
+      },
+      {
+        "sector": "Consumer Staples",
+        "percentage": 5.12
+      },
+      {
+        "sector": "Materials",
+        "percentage": 3.36
+      },
+      {
+        "sector": "Unspecified",
+        "percentage": 0.94
+      },
+      {
+        "sector": "Entities",
+        "percentage": 0.48
+      }
+    ],
+    "extracted_at": "2026-10-08T13:52:38.687Z",
+    "ingestion_status": "success"
+  },
+  {
+    "id": "hdfc-mid-cap-fund-direct-growth",
+    "search_id": "hdfc-mid-cap-fund-direct-growth",
+    "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+    "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+    "category": "Equity",
+    "sub_category": "Mid Cap",
+    "fund_house": "HDFC Mutual Fund",
+    "fund_manager": "Chirag Setalvad",
+    "launch_date": "01-Jan-201",
+    "aum": 108324.55,
+    "nav": 220.87,
+    "nav_date": "07-Oct-2026",
+    "expense_ratio": 0.76,
+    "exit_load": "Exit load of 1% if redeemed within 1 year.",
+    "lock_in": null,
+    "benchmark_name": "NIFTY Midcap 150 Total Return Index",
+    "risk": "Very High",
+    "min_investment_amount": 100,
+    "min_sip_investment": 100,
+    "crisil_rating": null,
+    "groww_rating": 4,
+    "description": "HDFC Mid Cap Fund Direct Growth is Mid Cap Equity mutual fund with risk-reward rating of 4/10. It has track record of 13 years, with three year return of 15.53. Risk is Very High",
+    "returns": {
+      "return1d": -0.52,
+      "return1w": 0.13,
+      "return1m": -5.4,
+      "return3m": -4.42,
+      "return6m": 7.67,
+      "return1y": 2.27,
+      "return2y": 8.11,
+      "return3y": 54.31,
+      "return5y": 120.7,
+      "return7y": 317.47,
+      "return10y": 361.33,
+      "return_since_created": 1074.92,
+      "cat_return1y": 3.54,
+      "cat_return3y": 54.22,
+      "cat_return5y": 94.64
+    },
+    "holdings": [
+      {
+        "company_name": "Repo",
+        "sector_name": "Unspecified",
+        "instrument_name": "Repo",
+        "market_value": 7484.0257,
+        "corpus_per": 6.91,
+        "stock_search_id": null
+      },
+      {
+        "company_name": "The Federal Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 4559.5178,
+        "corpus_per": 4.21,
+        "stock_search_id": "the-federal-bank-ltd"
+      },
+      {
+        "company_name": "AU Small Finance Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 4316.2706,
+        "corpus_per": 3.98,
+        "stock_search_id": "au-small-finance-bank-ltd"
+      },
+      {
+        "company_name": "Max Financial Services Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 4108.0297,
+        "corpus_per": 3.79,
+        "stock_search_id": "max-financial-services-ltd"
+      },
+      {
+        "company_name": "Ipca Laboratories Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 3575.6864,
+        "corpus_per": 3.3,
+        "stock_search_id": "ipca-laboratories-ltd"
+      },
+      {
+        "company_name": "Glenmark Pharmaceuticals Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 3325.2294,
+        "corpus_per": 3.07,
+        "stock_search_id": "glenmark-pharmaceuticals-ltd"
+      },
+      {
+        "company_name": "Indian Bank",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 3312.2966,
+        "corpus_per": 3.06,
+        "stock_search_id": "indian-bank"
+      },
+      {
+        "company_name": "Balkrishna Industries Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 3268.6579,
+        "corpus_per": 3.02,
+        "stock_search_id": "balkrishna-industries-ltd"
+      },
+      {
+        "company_name": "Coforge Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 3101.1577,
+        "corpus_per": 2.86,
+        "stock_search_id": "niit-technologies-ltd"
+      },
+      {
+        "company_name": "Fortis Healthcare Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 2911.3179,
+        "corpus_per": 2.69,
+        "stock_search_id": "fortis-healthcare-ltd"
+      },
+      {
+        "company_name": "Vishal Mega Mart Ltd.",
+        "sector_name": "Consumer Staples",
+        "instrument_name": "Equity",
+        "market_value": 2502.1853,
+        "corpus_per": 2.31,
+        "stock_search_id": "vishal-mega-mart-ltd"
+      },
+      {
+        "company_name": "Marico Ltd",
+        "sector_name": "Consumer Staples",
+        "instrument_name": "Equity",
+        "market_value": 2481.8864,
+        "corpus_per": 2.29,
+        "stock_search_id": "marico-ltd"
+      },
+      {
+        "company_name": "Mahindra & Mahindra Financial Services Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 2466.2077,
+        "corpus_per": 2.28,
+        "stock_search_id": "mahindra-mahindra-financial-services-ltd"
+      },
+      {
+        "company_name": "Aurobindo Pharma Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 2291.2927,
+        "corpus_per": 2.12,
+        "stock_search_id": "aurobindo-pharma-ltd"
+      },
+      {
+        "company_name": "Hindustan Petroleum Corporation Ltd",
+        "sector_name": "Energy & Utilities",
+        "instrument_name": "Equity",
+        "market_value": 2225.1,
+        "corpus_per": 2.05,
+        "stock_search_id": "hindustan-petroleum-corporation-ltd"
+      },
+      {
+        "company_name": "United Spirits Ltd",
+        "sector_name": "Consumer Staples",
+        "instrument_name": "Equity",
+        "market_value": 2093.1072,
+        "corpus_per": 1.93,
+        "stock_search_id": "united-spirits-ltd"
+      },
+      {
+        "company_name": "Cummins India Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 2079.8403,
+        "corpus_per": 1.92,
+        "stock_search_id": "cummins-india-ltd"
+      },
+      {
+        "company_name": "Persistent Systems Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 1922.9975,
+        "corpus_per": 1.78,
+        "stock_search_id": "persistent-systems-ltd"
+      },
+      {
+        "company_name": "Tata Communications Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 1921.2565,
+        "corpus_per": 1.77,
+        "stock_search_id": "tata-communications-ltd"
+      },
+      {
+        "company_name": "Apollo Tyres Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 1838.8575,
+        "corpus_per": 1.7,
+        "stock_search_id": "apollo-tyres-ltd"
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "percentage": 27.37
+      },
+      {
+        "sector": "Healthcare",
+        "percentage": 15.25
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "percentage": 12.91
+      },
+      {
+        "sector": "Technology",
+        "percentage": 11.57
+      },
+      {
+        "sector": "Consumer Staples",
+        "percentage": 9.11
+      },
+      {
+        "sector": "Industrials",
+        "percentage": 8.1
+      },
+      {
+        "sector": "Unspecified",
+        "percentage": 7.07
+      },
+      {
+        "sector": "Materials",
+        "percentage": 5.19
+      },
+      {
+        "sector": "Energy & Utilities",
+        "percentage": 3.12
+      },
+      {
+        "sector": "Diversified",
+        "percentage": 0.31
+      }
+    ],
+    "extracted_at": "2026-10-08T13:52:38.884Z",
+    "ingestion_status": "success"
+  },
+  {
+    "id": "hdfc-small-cap-fund-direct-growth",
+    "search_id": "hdfc-small-cap-fund-direct-growth",
+    "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+    "scheme_name": "HDFC Small Cap Fund Direct Growth",
+    "category": "Equity",
+    "sub_category": "Small Cap",
+    "fund_house": "HDFC Mutual Fund",
+    "fund_manager": "Chirag Setalvad",
+    "launch_date": "01-Jan-201",
+    "aum": 41890.86,
+    "nav": 156.13,
+    "nav_date": "07-Oct-2026",
+    "expense_ratio": 0.79,
+    "exit_load": "Exit load of 1% if redeemed within 1 year",
+    "lock_in": null,
+    "benchmark_name": "BSE 250 SmallCap Total Return Index",
+    "risk": "Very High",
+    "min_investment_amount": 100,
+    "min_sip_investment": 100,
+    "crisil_rating": null,
+    "groww_rating": 3,
+    "description": "HDFC Small Cap Fund Direct Growth is Small Cap Equity mutual fund with risk-reward rating of 3/10. It has track record of 13 years, with three year return of 9.62. Risk is Very High",
+    "returns": {
+      "return1d": 0.01,
+      "return1w": -0.09,
+      "return1m": -2.69,
+      "return3m": -1.22,
+      "return6m": 10.19,
+      "return1y": -3.07,
+      "return2y": 1.18,
+      "return3y": 31.8,
+      "return5y": 88.42,
+      "return7y": 287.35,
+      "return10y": 380.85,
+      "return_since_created": 881.41,
+      "cat_return1y": 10.91,
+      "cat_return3y": 54.07,
+      "cat_return5y": 105.23
+    },
+    "holdings": [
+      {
+        "company_name": "Repo",
+        "sector_name": "Unspecified",
+        "instrument_name": "Repo",
+        "market_value": 4292.748,
+        "corpus_per": 10.25,
+        "stock_search_id": null
+      },
+      {
+        "company_name": "Firstsource Solutions Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 1554.9636,
+        "corpus_per": 3.71,
+        "stock_search_id": "firstsource-solutions-ltd"
+      },
+      {
+        "company_name": "Aster DM Healthcare Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 1492.3463,
+        "corpus_per": 3.56,
+        "stock_search_id": "aster-dm-healthcare-ltd"
+      },
+      {
+        "company_name": "Gabriel India Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 1363.2907,
+        "corpus_per": 3.25,
+        "stock_search_id": "gabriel-india-ltd"
+      },
+      {
+        "company_name": "eClerx Services Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 1294.4115,
+        "corpus_per": 3.09,
+        "stock_search_id": "eclerx-services-ltd"
+      },
+      {
+        "company_name": "Bank Of Baroda",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1117.335,
+        "corpus_per": 2.67,
+        "stock_search_id": "bank-of-baroda"
+      },
+      {
+        "company_name": "Indian Bank",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 870.7205,
+        "corpus_per": 2.08,
+        "stock_search_id": "indian-bank"
+      },
+      {
+        "company_name": "Krishna Institute Of Medical Sciences Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 841.1409,
+        "corpus_per": 2.01,
+        "stock_search_id": "krishna-institute-of-medical-sciences-ltd"
+      },
+      {
+        "company_name": "Eris Lifesciences Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 838.5917,
+        "corpus_per": 2,
+        "stock_search_id": "eris-lifesciences-ltd"
+      },
+      {
+        "company_name": "Apar Industries Ltd",
+        "sector_name": "Diversified",
+        "instrument_name": "Equity",
+        "market_value": 796.6679,
+        "corpus_per": 1.9,
+        "stock_search_id": "apar-industries-ltd"
+      },
+      {
+        "company_name": "Pearl Global Industries Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 741.1988,
+        "corpus_per": 1.77,
+        "stock_search_id": "pearl-global-industries-ltd"
+      },
+      {
+        "company_name": "The Federal Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 740.4896,
+        "corpus_per": 1.77,
+        "stock_search_id": "the-federal-bank-ltd"
+      },
+      {
+        "company_name": "Sudarshan Chemical Industries Ltd",
+        "sector_name": "Materials",
+        "instrument_name": "Equity",
+        "market_value": 733.4585,
+        "corpus_per": 1.75,
+        "stock_search_id": "sudarshan-chemical-industries-ltd"
+      },
+      {
+        "company_name": "Home First Finance Company India Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 707.0138,
+        "corpus_per": 1.69,
+        "stock_search_id": "home-first-finance-company-india-ltd"
+      },
+      {
+        "company_name": "Vijaya Diagnostic Centre Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 700.9205,
+        "corpus_per": 1.67,
+        "stock_search_id": "vijaya-diagnostic-centre-ltd"
+      },
+      {
+        "company_name": "PVR Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 696.8865,
+        "corpus_per": 1.66,
+        "stock_search_id": "pvr-ltd"
+      },
+      {
+        "company_name": "Chalet Hotels Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 680.9799,
+        "corpus_per": 1.63,
+        "stock_search_id": "chalet-hotels-ltd"
+      },
+      {
+        "company_name": "Kalpataru Power Transmission Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 649.4631,
+        "corpus_per": 1.55,
+        "stock_search_id": "kalpataru-power-transmission-ltd"
+      },
+      {
+        "company_name": "City Union Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 611.3456,
+        "corpus_per": 1.46,
+        "stock_search_id": "city-union-bank-ltd"
+      },
+      {
+        "company_name": "Suprajit Engineering Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 596.9103,
+        "corpus_per": 1.42,
+        "stock_search_id": "suprajit-engineering-ltd"
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Industrials",
+        "percentage": 21.62
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "percentage": 20.59
+      },
+      {
+        "sector": "Financial",
+        "percentage": 12.37
+      },
+      {
+        "sector": "Healthcare",
+        "percentage": 11.28
+      },
+      {
+        "sector": "Unspecified",
+        "percentage": 10.36
+      },
+      {
+        "sector": "Materials",
+        "percentage": 8.02
+      },
+      {
+        "sector": "Technology",
+        "percentage": 7.24
+      },
+      {
+        "sector": "Consumer Staples",
+        "percentage": 4.72
+      },
+      {
+        "sector": "Diversified",
+        "percentage": 2.39
+      },
+      {
+        "sector": "Energy & Utilities",
+        "percentage": 1.41
+      }
+    ],
+    "extracted_at": "2026-10-08T13:52:39.125Z",
+    "ingestion_status": "success"
+  },
+  {
+    "id": "hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "search_id": "hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "scheme_name": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+    "category": "Equity",
+    "sub_category": "ELSS",
+    "fund_house": "HDFC Mutual Fund",
+    "fund_manager": "Vinay Kulkarni",
+    "launch_date": "01-Jan-201",
+    "aum": 15991.78,
+    "nav": 1416.36,
+    "nav_date": "07-Oct-2026",
+    "expense_ratio": 1.21,
+    "exit_load": "Nil",
+    "lock_in": "3 Years (Statutory Lock-in under Section 80C)",
+    "benchmark_name": "NIFTY 500 Total Return Index",
+    "risk": "Very High",
+    "min_investment_amount": 500,
+    "min_sip_investment": 500,
+    "crisil_rating": null,
+    "groww_rating": 5,
+    "description": "HDFC ELSS Tax Saver Fund Direct Plan Growth is ELSS Equity mutual fund with risk-reward rating of 5/10. It has track record of 13 years, with three year return of 11.73. Risk is Very High",
+    "returns": {
+      "return1d": -0.48,
+      "return1w": -0.04,
+      "return1m": -4.66,
+      "return3m": -5.81,
+      "return6m": 0.88,
+      "return1y": -8.69,
+      "return2y": -3.14,
+      "return3y": 39.55,
+      "return5y": 81.57,
+      "return7y": 181.38,
+      "return10y": 226.32,
+      "return_since_created": 474.79,
+      "cat_return1y": -1.33,
+      "cat_return3y": 37.08,
+      "cat_return5y": 63.88
+    },
+    "holdings": [
+      {
+        "company_name": "ICICI Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1490.35,
+        "corpus_per": 9.32,
+        "stock_search_id": "icici-bank-ltd"
+      },
+      {
+        "company_name": "HDFC Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1176.94,
+        "corpus_per": 7.36,
+        "stock_search_id": "hdfc-bank-ltd"
+      },
+      {
+        "company_name": "Axis Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 1040,
+        "corpus_per": 6.5,
+        "stock_search_id": "axis-bank-ltd"
+      },
+      {
+        "company_name": "Maruti Suzuki India Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 745.085,
+        "corpus_per": 4.66,
+        "stock_search_id": "maruti-suzuki-india-ltd"
+      },
+      {
+        "company_name": "State Bank of India",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 742,
+        "corpus_per": 4.64,
+        "stock_search_id": "state-bank-of-india"
+      },
+      {
+        "company_name": "Kotak Mahindra Bank Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 733.95,
+        "corpus_per": 4.59,
+        "stock_search_id": "kotak-mahindra-bank-ltd"
+      },
+      {
+        "company_name": "Bharti Airtel Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 686.3827,
+        "corpus_per": 4.29,
+        "stock_search_id": "bharti-airtel-ltd"
+      },
+      {
+        "company_name": "SBI Life Insurance Company Ltd",
+        "sector_name": "Financial",
+        "instrument_name": "Equity",
+        "market_value": 520.1752,
+        "corpus_per": 3.25,
+        "stock_search_id": "sbi-life-insurance-company-ltd"
+      },
+      {
+        "company_name": "HCL Technologies Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 469.1115,
+        "corpus_per": 2.93,
+        "stock_search_id": "hcl-technologies-ltd"
+      },
+      {
+        "company_name": "Hyundai Motor India Ltd.",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 441,
+        "corpus_per": 2.76,
+        "stock_search_id": "hyundai-motor-india-ltd"
+      },
+      {
+        "company_name": "Reliance Industries Ltd",
+        "sector_name": "Energy & Utilities",
+        "instrument_name": "Equity",
+        "market_value": 424.6025,
+        "corpus_per": 2.66,
+        "stock_search_id": "reliance-industries-ltd"
+      },
+      {
+        "company_name": "Zomato Ltd",
+        "sector_name": "Technology",
+        "instrument_name": "Equity",
+        "market_value": 369.1125,
+        "corpus_per": 2.31,
+        "stock_search_id": "zomato-ltd"
+      },
+      {
+        "company_name": "Bajaj Auto Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 312.6871,
+        "corpus_per": 1.96,
+        "stock_search_id": "bajaj-auto-ltd"
+      },
+      {
+        "company_name": "Tata Steel Ltd",
+        "sector_name": "Materials",
+        "instrument_name": "Equity",
+        "market_value": 276.525,
+        "corpus_per": 1.73,
+        "stock_search_id": "tata-steel-ltd"
+      },
+      {
+        "company_name": "Britannia Industries Ltd",
+        "sector_name": "Consumer Staples",
+        "instrument_name": "Equity",
+        "market_value": 275.2491,
+        "corpus_per": 1.72,
+        "stock_search_id": "britannia-industries-ltd"
+      },
+      {
+        "company_name": "Larsen & Toubro Ltd",
+        "sector_name": "Industrials",
+        "instrument_name": "Equity",
+        "market_value": 255.3731,
+        "corpus_per": 1.6,
+        "stock_search_id": "larsen-toubro-ltd"
+      },
+      {
+        "company_name": "Apollo Hospitals Enterprise Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 244.7088,
+        "corpus_per": 1.53,
+        "stock_search_id": "apollo-hospitals-enterprise-ltd"
+      },
+      {
+        "company_name": "JSW Steel Ltd",
+        "sector_name": "Materials",
+        "instrument_name": "Equity",
+        "market_value": 241.2918,
+        "corpus_per": 1.51,
+        "stock_search_id": "jsw-steel-ltd"
+      },
+      {
+        "company_name": "Bosch Ltd",
+        "sector_name": "Consumer Discretionary",
+        "instrument_name": "Equity",
+        "market_value": 225,
+        "corpus_per": 1.41,
+        "stock_search_id": "bosch-ltd"
+      },
+      {
+        "company_name": "Dr. Lal Pathlabs Ltd",
+        "sector_name": "Healthcare",
+        "instrument_name": "Equity",
+        "market_value": 220.5444,
+        "corpus_per": 1.38,
+        "stock_search_id": "dr-lal-pathlabs-ltd"
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "percentage": 42.67
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "percentage": 16.26
+      },
+      {
+        "sector": "Technology",
+        "percentage": 13.22
+      },
+      {
+        "sector": "Healthcare",
+        "percentage": 8.24
+      },
+      {
+        "sector": "Industrials",
+        "percentage": 5.12
+      },
+      {
+        "sector": "Energy & Utilities",
+        "percentage": 4.56
+      },
+      {
+        "sector": "Materials",
+        "percentage": 4.36
+      },
+      {
+        "sector": "Consumer Staples",
+        "percentage": 4.26
+      },
+      {
+        "sector": "Unspecified",
+        "percentage": 0.99
+      },
+      {
+        "sector": "Entities",
+        "percentage": 0.32
+      }
+    ],
+    "extracted_at": "2026-10-08T13:52:39.260Z",
+    "ingestion_status": "success"
+  }
+]
