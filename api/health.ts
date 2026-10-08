@@ -1,6 +1,6 @@
 export default function handler(req: any, res: any) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
   if (req.method === 'OPTIONS') {
@@ -9,14 +9,9 @@ export default function handler(req: any, res: any) {
 
   return res.status(200).json({
     status: 'ok',
-    message: 'HDFC RAG Knowledge API Gateway Active',
+    app: 'hdfc-rag-engine',
     version: '3.1.0',
-    endpoints: [
-      '/api/rag/chat',
-      '/api/funds',
-      '/api/funds/logs',
-      '/api/funds/ingest',
-      '/api/health'
-    ]
+    environment: 'production-vercel',
+    timestamp: new Date().toISOString()
   });
 }

@@ -243,7 +243,7 @@
         "percentage": 0.48
       }
     ],
-    "extracted_at": "2026-10-08T14:49:28.614Z",
+    "extracted_at": "2026-10-08T15:06:19.779Z",
     "ingestion_status": "success"
   },
   {
@@ -490,7 +490,7 @@
         "percentage": 0.31
       }
     ],
-    "extracted_at": "2026-10-08T14:49:28.980Z",
+    "extracted_at": "2026-10-08T15:06:19.907Z",
     "ingestion_status": "success"
   },
   {
@@ -737,7 +737,7 @@
         "percentage": 1.41
       }
     ],
-    "extracted_at": "2026-10-08T14:49:29.312Z",
+    "extracted_at": "2026-10-08T15:06:20.044Z",
     "ingestion_status": "success"
   },
   {
@@ -984,7 +984,7 @@
         "percentage": 0.32
       }
     ],
-    "extracted_at": "2026-10-08T14:49:29.618Z",
+    "extracted_at": "2026-10-08T15:06:20.124Z",
     "ingestion_status": "success"
   }
 ]

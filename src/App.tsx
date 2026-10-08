@@ -11,6 +11,7 @@ import { FundComparator } from './components/FundComparator';
 import { M3RAGChatbot } from './components/M3RAGChatbot';
 import { FundData, ChatMessage } from './types/mutualFund';
 import { INITIAL_HDFC_FUNDS } from './data/defaultFundData';
+import { processLocalRAGQuery } from './utils/ragChunker';
 import { Shield, Sparkles, CheckCircle2, AlertCircle, Database, Layers } from 'lucide-react';
 
 export default function App() {
@@ -141,26 +142,28 @@ export default function App() {
     setIsChatLoading(true);
 
     try {
-      const res = await fetch('/api/rag/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text })
-      });
+      let data: any = null;
+      try {
+        const res = await fetch('/api/rag/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text })
+        });
 
-      if (!res.ok) {
-        let errorDetail = `Server returned ${res.status}`;
-        try {
-          const errJson = await res.json();
-          if (errJson?.error) {
-            errorDetail = errJson.error;
-          }
-        } catch {
-          // fallback
+        if (res.ok) {
+          data = await res.json();
+        } else {
+          console.warn(`Server returned status ${res.status}, activating client-side financial RAG pipeline.`);
         }
-        throw new Error(errorDetail);
+      } catch (fetchErr) {
+        console.warn('Network or server unreachable, activating client-side financial RAG pipeline:', fetchErr);
       }
 
-      const data = await res.json();
+      // If backend was unreachable or returned non-200 (e.g. 500 on Vercel), seamlessly fall back to local RAG
+      if (!data || !data.answer) {
+        data = processLocalRAGQuery(text, funds.length > 0 ? funds : INITIAL_HDFC_FUNDS);
+      }
+
       const botMsg: ChatMessage = {
         id: `bot-${Date.now()}`,
         role: 'assistant',
@@ -173,14 +176,19 @@ export default function App() {
       };
       setMessages(prev => [...prev, botMsg]);
     } catch (err: any) {
-      console.error('Chat error:', err);
-      const errorMsg: ChatMessage = {
-        id: `bot-err-${Date.now()}`,
+      console.error('Chat error fallback:', err);
+      const fallback = processLocalRAGQuery(text, funds.length > 0 ? funds : INITIAL_HDFC_FUNDS);
+      const botMsg: ChatMessage = {
+        id: `bot-fallback-${Date.now()}`,
         role: 'assistant',
-        content: `I encountered an error retrieving data: ${err.message}. Please check your connection or try again.`,
-        timestamp: new Date().toISOString()
+        content: fallback.answer,
+        timestamp: new Date().toISOString(),
+        retrievedChunks: fallback.retrievedChunks,
+        citations: fallback.citations,
+        modelUsed: 'client-emergency-fallback',
+        pipelineTrace: fallback.pipelineTrace
       };
-      setMessages(prev => [...prev, errorMsg]);
+      setMessages(prev => [...prev, botMsg]);
     } finally {
       setIsChatLoading(false);
     }
