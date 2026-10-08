@@ -195,29 +195,58 @@ export async function processRAGQuery(userQuery: string): Promise<ChatResponse> 
     };
   } catch (err: any) {
     console.warn('Phase 4/5 pipeline execution fallback:', err);
-    // Fallback to legacy evaluator
-    const retrievedChunks = retrieveRelevantChunks(userQuery, allChunks, 4);
-    const citationMap = new Map<string, { title: string; url: string; fundName: string; category: string }>();
-    for (const item of retrievedChunks) {
-      citationMap.set(item.chunk.source_url, {
-        title: item.chunk.title,
-        url: item.chunk.source_url,
-        fundName: item.chunk.fund_name,
-        category: item.chunk.metadata.sub_category
-      });
-    }
-
-    const answer = generateDeterministicRAGAnswer(userQuery, retrievedChunks, funds);
-    return {
-      answer,
-      retrievedChunks,
-      citations: Array.from(citationMap.values()),
-      modelUsed: 'deterministic-fallback',
-      pipelineTrace: {
-        intent: 'general',
-        latencyMs: Date.now() - startTime
+    try {
+      // Fallback to legacy evaluator
+      const retrievedChunks = retrieveRelevantChunks(userQuery, allChunks, 4);
+      const citationMap = new Map<string, { title: string; url: string; fundName: string; category: string }>();
+      for (const item of retrievedChunks) {
+        if (!item?.chunk?.source_url) continue;
+        citationMap.set(item.chunk.source_url, {
+          title: item.chunk.title || 'Scheme Information',
+          url: item.chunk.source_url,
+          fundName: item.chunk.fund_name || 'HDFC Mutual Fund',
+          category: item.chunk.metadata?.sub_category || 'Equity'
+        });
       }
-    };
+
+      const answer = generateDeterministicRAGAnswer(userQuery, retrievedChunks, funds);
+      return {
+        answer,
+        retrievedChunks,
+        citations: Array.from(citationMap.values()),
+        modelUsed: 'deterministic-fallback',
+        pipelineTrace: {
+          intent: 'general',
+          latencyMs: Date.now() - startTime
+        }
+      };
+    } catch (fallbackErr: any) {
+      console.error('Fatal fallback error in processRAGQuery:', fallbackErr);
+      const q = userQuery.toLowerCase();
+      const matched = funds.find(f => 
+        q.includes(f.sub_category.toLowerCase()) || 
+        (f.sub_category === 'Large Cap' && q.includes('large')) ||
+        (f.sub_category === 'Mid Cap' && q.includes('mid')) ||
+        (f.sub_category === 'Small Cap' && q.includes('small')) ||
+        (f.sub_category === 'ELSS' && (q.includes('elss') || q.includes('tax')))
+      ) || funds[0];
+
+      return {
+        answer: `NAV of ${matched.scheme_name} is ₹${matched.nav}.\n\nSource: [Groww Scheme Record](${matched.url})`,
+        retrievedChunks: [],
+        citations: [{
+          title: matched.scheme_name,
+          url: matched.url,
+          fundName: matched.scheme_name,
+          category: matched.sub_category
+        }],
+        modelUsed: 'emergency-fallback',
+        pipelineTrace: {
+          intent: 'emergency',
+          latencyMs: Date.now() - startTime
+        }
+      };
+    }
   }
 }
 

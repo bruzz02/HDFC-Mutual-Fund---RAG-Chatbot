@@ -225,7 +225,7 @@ export function retrieveRelevantChunks(query: string, allChunks: RAGChunk[], top
       if (contentLower.includes(token)) {
         score += 1;
       }
-      if (chunk.metadata.tags.includes(token)) {
+      if (Array.isArray(chunk.metadata?.tags) && chunk.metadata.tags.includes(token)) {
         score += 2;
       }
     }

@@ -11,7 +11,37 @@ dotenv.config();
 
 export const app = express();
 
-app.use(express.json({ limit: '10mb' }));
+// Body parsing middleware compatible with both standalone Express and Vercel serverless environments
+app.use((req, res, next) => {
+  // If Vercel has already parsed the body into an object
+  if (req.body !== undefined && req.body !== null && typeof req.body === 'object') {
+    return next();
+  }
+  // If body is a raw string, attempt JSON parse
+  if (typeof req.body === 'string') {
+    try {
+      req.body = JSON.parse(req.body);
+    } catch {
+      // retain string
+    }
+    return next();
+  }
+  // Otherwise use express.json
+  express.json({ limit: '10mb' })(req, res, (err) => {
+    // If stream already consumed or parsing failed, continue gracefully
+    next();
+  });
+});
+
+// URL recovery middleware for Vercel rewrites:
+// When Vercel rewrites /api/(.*) to /api, recover the original path from headers if present
+app.use((req, res, next) => {
+  const forwardedUri = (req.headers['x-forwarded-uri'] || req.headers['x-matched-path'] || req.headers['x-original-url']) as string;
+  if (forwardedUri && typeof forwardedUri === 'string' && (req.url === '/api' || req.url === '/')) {
+    req.url = forwardedUri;
+  }
+  next();
+});
 
 // CORS configuration for local and deployed environments (Vercel)
 app.use((req, res, next) => {
@@ -94,7 +124,12 @@ apiRouter.post('/scheduler/trigger', async (req, res) => {
 // Query RAG Chatbot
 apiRouter.post('/rag/chat', async (req, res) => {
   try {
-    const { message } = req.body;
+    const body = (typeof req.body === 'object' && req.body !== null)
+      ? req.body
+      : (typeof req.body === 'string' ? JSON.parse(req.body || '{}') : {});
+
+    const message = body.message || body.query || body.prompt || req.query?.message || req.query?.q;
+
     if (!message || typeof message !== 'string') {
       return res.status(400).json({ error: 'Message query is required' });
     }
